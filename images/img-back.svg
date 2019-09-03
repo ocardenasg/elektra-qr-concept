@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP-Video-Game" transform="translate(-20.000000, -17.000000)" fill="#FE1D00" fill-rule="nonzero">
+            <g id="New-Proto-Header-Mobile">
+                <g id="round-arrow_back-24px" transform="translate(14.000000, 11.000000)">
+                    <path d="M28.5,16.5 L11.745,16.5 L19.065,9.18 C19.65,8.595 19.65,7.635 19.065,7.05 C18.48,6.465 17.535,6.465 16.95,7.05 L7.065,16.935 C6.48,17.52 6.48,18.465 7.065,19.05 L16.95,28.935 C17.535,29.52 18.48,29.52 19.065,28.935 C19.65,28.35 19.65,27.405 19.065,26.82 L11.745,19.5 L28.5,19.5 C29.325,19.5 30,18.825 30,18 C30,17.175 29.325,16.5 28.5,16.5 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

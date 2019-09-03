@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Elektra - Catálogo Extendido</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="styles/styles.css">
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<nav class="main-nav">
+			<a href="#" class="item back" id="back" onclick="window.history.go(-1); return false;"><img src="images/img-back.svg" /></a>
+			<a href="/" class="item menu"><img src="images/img-menu.svg" /></a>
+			<form class="item search" id="ctasearch">
+				<input type="search" id="search" inputmode="search" name="search" class="input-search" placeholder="Busca aquí...">
+				<button class="btn-search"></button>
+			</form>
+			<a href="/" class="item credit"><img src="images/img-credit.svg" /></a>
+			<a href="/" class="item cart"><img src="images/img-cart.svg" /></a>
+		</nav>
+
+		<script>
+			document.addEventListener("touchstart", function(){}, true);
+			
+			$('#ctasearch').on('click', function() {
+				$('#ctasearch').addClass('open');
+				$('nav .logo ,nav .menu ,nav .credit ,nav .cart').addClass('close');
+				if($('#back').hasClass('hidden')){
+				   $('#back').removeClass('hidden')
+				}else{
+				  $('#back').addClass('hidden')
+				}
+			});
+			
+			$('#back').on('click', function() {
+				$('#ctasearch').removeClass('open');
+				$('nav .logo ,nav .menu ,nav .credit ,nav .cart').removeClass('close');
+				if($('#back').hasClass('hidden')){
+				   $('#back').removeClass('hidden')
+				}else{
+				  $('#back').addClass('hidden')
+				}
+			});
+			
+			$(function() {
+				var vW = $(window).width() - 6;
+				var xThreeElement = vW / 3;
+				var dHeight = xThreeElement * 2;
+				
+				var vW2 = $(window).width() - 3;
+				var xTwoElement = vW2 / 2;
+				var dHeight2 = xTwoElement;
+				
+				console.log(xTwoElement);
+				console.log(vW + "px");
+				console.log(xThreeElement);
+				console.log(dHeight);
+				
+				$('.square').height(xThreeElement);
+				$('.square').width(xThreeElement);
+				$('.slider > li').height(dHeight);
+				
+				$('.half').width(xTwoElement);
+				$('.half').height(dHeight2);
+				$('.full').height(dHeight2);
+				
+				$('.slider').slick({
+				    infinite: false,
+				    dots: true,
+				    arrows: false,
+				});
+				
+			});
+			
+		</script>
+	</body>
+</html>
